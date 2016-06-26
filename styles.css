@@ -1,0 +1,334 @@
+
+body 
+{
+    background-color: whitesmoke;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+p, h2, a, ul
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+h1
+{
+	font-family: 'Amatic SC', cursive;
+	color: #B8A40E;
+	font-size: 5em;
+}
+
+p
+{
+    font-size: 1em; 
+    line-height: 1.7em;
+	padding: 0;
+	margin: 0;
+}
+
+h2
+{
+    font-size: 1.2em;
+}
+
+ul
+{
+    line-height: 1.8em;
+}
+
+a 
+{
+    color: black;
+    text-decoration: none;
+    margin-right: 1em;  
+}
+
+.wrapper
+{
+    width: 100%;
+    margin:auto;
+}
+
+.zitat
+{
+    background-color: #C51051;
+    color: whitesmoke;
+    padding: 4%;
+    text-align: center;
+}
+
+.zitat h1
+{
+	color: whitesmoke;
+}
+
+.zitat p
+{
+	font-size: 1.3em;
+}
+
+.portrait
+{
+    padding: 2%;
+}
+
+.methoden
+{
+	padding: 2%;
+}
+
+.kontakt
+{
+    padding: 2%;
+}
+
+.header
+{
+    position: fixed;
+	z-index: 10;
+	top: 0px;
+	left: 0px;
+    background-color: whitesmoke;
+    width: 100%;
+	padding: 1%;
+	opacity: 0.9;
+}
+
+.header a:hover
+{
+	color: #C51051;
+	font-size: 1.2em;
+}
+
+.workshops
+{
+    background-color: #C51051;
+    padding: 2%;
+    color: whitesmoke;
+}
+
+
+.methoden_oben
+{
+    display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: flex-end;
+    align-items: flex-end;
+	padding: 2%;
+}
+
+.methoden_unten
+{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: flex-end;
+    align-items: flex-end;
+	padding: 2%;
+}
+
+.praxis
+{ 
+    padding: 2%;
+}	
+
+.opener img
+{
+    width: 100%;
+    padding-top: 4%; 
+}
+
+.portrait img
+{
+    float: right;
+    margin-left: 2.5em;
+    width: 25%;
+	border-radius: 7%;
+}
+
+.boxen
+{
+    width: 20%;
+    padding: 2%; 
+}
+
+.boxen img
+{
+    width: 95%;
+	border-radius: 7%; 
+	cursor: pointer;
+}
+
+.boxen img:hover
+{
+	width: 100%;
+}
+
+.workshops h1
+{
+	color: whitesmoke;
+}
+
+.kontaktdaten
+{
+	float: left;
+	width: 50%;
+	margin-bottom: 5%;
+}
+
+.kontaktdaten a:hover
+{
+	color: #C51051;
+	font-size: 1.2em;
+}
+
+.googlemaps
+{
+	float: left;
+	width: 50%;
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+
+.footer
+{
+	clear: both;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: whitesmoke;
+	opacity: 0.9;
+}
+
+.footer p
+{
+	font-size: 0.8em;
+	padding-left: 1%;
+	margin-top: 2em;
+	margin: 0.5em;
+	float: left;
+}
+
+.datenschutz h1
+{
+	font-family: 'Amatic SC', cursive;
+	color: #B8A40E;
+	font-size: 5em;
+	margin-top: 5%;
+	margin-left:2%;
+}
+
+.datenschutz p
+{
+	margin: 2%;
+}
+
+.erklaerung h1
+{
+	font-family: 'Amatic SC', cursive;
+	color: #B8A40E;
+	font-size: 5em;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.erklaerung p
+{
+	margin: 2%;
+}
+
+.methoden_mobile
+{
+	display: none;
+}
+
+@media screen and (max-width : 1100px )
+{
+
+.opener img
+{
+    width: 100%;
+    padding-top: 6%; 
+}
+
+.methoden
+{
+	display: none;
+}
+	
+.methoden_mobile
+{
+	display: block;	
+	margin-left: 2%;
+}
+
+button.accordion
+{
+	background-color: #C51051;
+	width: 100%;
+	cursor: pointer;
+	border-radius: 2%;
+	padding: 1em;
+	color: whitesmoke;
+	border: none;
+	outline: none;
+	text-align: left;
+	transition: 0.4s;
+	font-size: 1.1em;
+	font-family: 'Raleway', sans-serif;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: pink;
+    display: none;
+	max-height: 0;
+	overflow: hidden;
+	transition: 0.6s ease-in-out;
+	opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+	max-height: 500px;
+	display: block !important;
+	color: gray;
+	font-size: 1em;
+	padding: 0.5em;
+}
+
+h1
+{
+	font-size: 2.5em;
+}
+
+h2
+{
+	font-size: 1.1em;
+}
+
+p
+{
+	font-size: 1.0em;
+}
+
+.kontaktdaten
+{
+ 
+}
+
+.googlemaps
+{
+	position: relative;
+	float: clear;
+}
+
+.kontaktformular
+{
+	position: relative;
+	left: 0;
+	float: left;
+}
+
+}
